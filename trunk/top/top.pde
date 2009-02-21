@@ -16,22 +16,22 @@
 */
 
 //define joystick axis pins
-#define xPin 0
-#define yPin 1
-#define zPin 2
-#define TPin 3
+#define Joy1xPin 0
+#define Joy1yPin 1
+#define Joy2xPin 2
+#define Joy2yPin 3
 
 //define top and trigger buttons
-#define xyTopPin 3
-#define xyTriggerPin 4
-#define zTTopPin 5
-#define zTTriggerPin 6
+#define xyTopPin 2
+#define xyTriggerPin 3
+#define zTTopPin 4
+#define zTTriggerPin 5
 
 //declare input var for input
 int input = 0;
 
 //declare input pin arrays
-int analogInputPins[4] = {xPin,yPin,zPin,TPin};
+int analogInputPins[4] = {Joy1xPin,Joy1yPin,Joy2xPin,Joy2yPin};
 int digitalInputPins[4] = {xyTopPin,xyTriggerPin,zTTopPin,zTTriggerPin};
 
 void setup() {

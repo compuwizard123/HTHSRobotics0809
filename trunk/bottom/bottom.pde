@@ -90,10 +90,10 @@ void loop() {
   }
   
   //declare x,y,T,z,channel vars
-  int x = data[0];
-  int y = data[1];
-  int T = data[2];
-  int z = data[3];
+  int x = data[2];
+  int y = data[3];
+  int T = data[0];
+  int z = data[1];
   
   //gets percentage of power for x,y,T
   xper = x/2048.0;
