@@ -25,10 +25,10 @@
 Messenger message = Messenger(); //Instantiate Messenger object with the default separator (the space character)
 
 //define joystick top and trigger pins
-#define xyTopPin 2
-#define xyTriggerPin 4
-#define zTTopPin 7
-#define zTTriggerPin 8
+#define zTTopPin 2
+#define zTTriggerPin 3
+#define xyTopPin 7
+#define xyTriggerPin 8
 
 //declare output pin arrays
 int digitalOutputPins[4] = {xyTopPin,xyTriggerPin,zTTopPin,zTTriggerPin};

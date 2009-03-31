@@ -22,10 +22,10 @@
 #define Joy2yPin 3
 
 //define top and trigger buttons
-#define xyTopPin 2
-#define xyTriggerPin 3
-#define zTTopPin 4
-#define zTTriggerPin 5
+#define xyTopPin 3
+#define xyTriggerPin 2
+#define zTTopPin 5
+#define zTTriggerPin 4
 
 //declare input var for input
 int input = 0;
