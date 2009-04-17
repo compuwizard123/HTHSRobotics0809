@@ -60,4 +60,5 @@ void loop() {
     Serial.print(" "); //echo space for readability (debugging)
   }
   Serial.println(); //echo new line for next serial (debugging)
+  delay(100);
 }

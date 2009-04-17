@@ -31,7 +31,8 @@ Messenger message = Messenger(); //Instantiate Messenger object with the default
 #define xyTriggerPin 8
 
 //declare output pin arrays
-int digitalOutputPins[4] = {xyTopPin,xyTriggerPin,zTTopPin,zTTriggerPin};
+//int digitalOutputPins[4] = {xyTopPin,xyTriggerPin,zTTopPin,zTTriggerPin};
+int digitalOutputPins[4] = {2,2,2,2};
 
 //declare data var for serial input
 int data[8] = {0,0,0,0,0,0,0,0};
@@ -45,7 +46,7 @@ float xper,yper,Tper;
 //declare Motors to x,y,T - {1,2,3,4}
 int Motx[4] = {-1,1,1,-1};
 int Moty[4] = {-1,-1,1,1};
-int MotT[4] = {-1,1,-1,1};
+int MotT[4] = {-1,-1,-1,-1};
 
 //declare temp var for calculations
 float temp;
@@ -124,6 +125,7 @@ void loop() {
     }
   }
   
+  
   //set digital outputs to state of each joystick button
   for(int i=0; i<4; i++) {
     (data[i+4] == 1) ? digitalWrite(digitalOutputPins[i], LOW) : digitalWrite(digitalOutputPins[i], HIGH);
@@ -145,7 +147,7 @@ void loop() {
     Serial.print(" ");
   }
   Serial.println();
-  
+
   //send set pwm values to tlc5940
   Tlc.update();
 }
